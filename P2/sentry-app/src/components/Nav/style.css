@@ -3,11 +3,12 @@
   top: 0;
   left: 0;
   right: 0;
+  background-color: rgba(150,150,150,.9);
+  box-shadow: 0 0 4px black;
 }
 
 .main-nav__header {
   font-size: 1rem;
-  background-color: dimgray;
   margin: 0;
   text-align: center;
   cursor: pointer;
