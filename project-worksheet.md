@@ -90,6 +90,7 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 | Function | Description |
 | :---: | --- |
 | convertExpToDecimal() | Converts a number in exponential notation to a decimal. |
+| parseDateString() | Takes a date string from an API response and returns a more human readable string |
 
 
 ## Additional Libraries

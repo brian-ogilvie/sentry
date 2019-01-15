@@ -6,13 +6,12 @@ const ImpactItem = props => {
   const {des, date, ip, width} = props.impactor
   const dateText = util.parseDateString(date)
   const prob = (util.convertExpToDec(ip) * 100).toFixed(3)
-  console.log(ip, prob)
   return (
     <div className="impact-item">
-      <h4>Object Name: {des}</h4>
-      <p>Diameter: {width}</p>
-      <p>Impact Date: {dateText}</p>
-      <p>Impact Probability: {prob}%</p>
+      <p className="impact-item__heading"><span className="impact-item__em">Object Name:</span> {des}</p>
+      <p className="impact-item__info"><span className="impact-item__em">Diameter:</span> {width}</p>
+      <p className="impact-item__info"><span className="impact-item__em">Impact Date:</span> {dateText}</p>
+      <p className="impact-item__info"><span className="impact-item__em">Impact Probability:</span> {prob}%</p>
     </div>
   )
 }

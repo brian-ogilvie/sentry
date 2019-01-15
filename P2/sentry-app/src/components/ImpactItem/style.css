@@ -1,4 +1,21 @@
 .impact-item {
   box-sizing: border-box;
-  border: 1px solid blue;
+  background-color: lightgray;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.impact-item__heading {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+.impact-item__em {
+  font-weight: bold;
+}
+
+.impact-item__info {
+  margin: .5em 0;
 }
