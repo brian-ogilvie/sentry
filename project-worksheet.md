@@ -36,7 +36,10 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 8. Nice CSS transitions for navigation and user interaction
 9. Searchable Query/Filters
 
-<img alt="priority matrix" src="https://res.cloudinary.com/brian-ogilvie/image/upload/v1547527210/Sentry/Priority%20Matrix.jpg" >  
+<details>
+<summary>**Priority Matrix**</summary>
+<img alt="priority matrix" src="https://res.cloudinary.com/brian-ogilvie/image/upload/v1547527210/Sentry/Priority%20Matrix.jpg" >
+</details>
 
 ### MVP/PostMVP - 5min
 #### MVP 
@@ -53,7 +56,10 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 
 ## React Architectural Design
 
-#### [Component Hierarchy](https://res.cloudinary.com/brian-ogilvie/image/upload/v1547528616/Sentry/Component%20Hierarchy.jpg)
+<details>
+	<summary>**Component Hierarchy**</summary>
+	<img alt="component hierarchy" src="https://res.cloudinary.com/brian-ogilvie/image/upload/v1547528616/Sentry/Component%20Hierarchy.jpg" >
+</details>
 
 ## Functional Components
 
