@@ -2,14 +2,10 @@
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description: Wireframes / Priority Matrix / Component Hierarchy| Incomplete
-|Day 2| Core Application Structure (HTML, Components, CSS, etc.). MVP: 1st API call. Render data to list component | Incomplete
+|Day 1| Project Description: Wireframes / Priority Matrix / Component Hierarchy| Complete
+|Day 2| Core Application Structure (HTML, Components, CSS, etc.). MVP: 1st API call. Render data to list component | Complete
 |Day 3| Begin Post MVP. More Info Page with data for single asteroid (2nd API call). About page with info about Sentry | Incomplete
 |Day 4| BG image for page. Transitions between pages. Search filters. Google Fonts | Incomplete
 |Day 5| Present | Incomplete
@@ -37,7 +33,7 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 9. Searchable Query/Filters
 
 <details>
-<summary>**Priority Matrix**</summary>
+<summary><b>Priority Matrix</b></summary>
 <img alt="priority matrix" src="https://res.cloudinary.com/brian-ogilvie/image/upload/v1547527210/Sentry/Priority%20Matrix.jpg" >
 </details>
 
@@ -57,7 +53,7 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 ## React Architectural Design
 
 <details>
-	<summary>**Component Hierarchy**</summary>
+	<summary><b>Component Hierarchy</b></summary>
 	<img alt="component hierarchy" src="https://res.cloudinary.com/brian-ogilvie/image/upload/v1547528616/Sentry/Component%20Hierarchy.jpg" >
 </details>
 

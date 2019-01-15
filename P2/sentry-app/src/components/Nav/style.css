@@ -1,0 +1,33 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-nav__header {
+  font-size: 1rem;
+  background-color: dimgray;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  padding: .5em;
+  background-color: gray;
+  border-bottom: 1px solid black;
+}
+
+.main-nav__link {
+  color: white;
+}

@@ -1,0 +1,12 @@
+.App {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
