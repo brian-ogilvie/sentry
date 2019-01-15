@@ -33,7 +33,7 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 9. Searchable Query/Filters
 
 <details>
-<summary>**Priority Matrix**</summary>
+<summary><b>Priority Matrix</b></summary>
 <img alt="priority matrix" src="https://res.cloudinary.com/brian-ogilvie/image/upload/v1547527210/Sentry/Priority%20Matrix.jpg" >
 </details>
 
@@ -53,7 +53,7 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 ## React Architectural Design
 
 <details>
-	<summary>**Component Hierarchy**</summary>
+	<summary><b>Component Hierarchy</b></summary>
 	<img alt="component hierarchy" src="https://res.cloudinary.com/brian-ogilvie/image/upload/v1547528616/Sentry/Component%20Hierarchy.jpg" >
 </details>
 
