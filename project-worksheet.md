@@ -1,4 +1,4 @@
-# Project Overview
+# Sentry Project Overview
 
 ## Project Schedule
 
@@ -8,83 +8,99 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 2| Wireframes / Priority Matrix / Functional Components | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| Pseudocode / actual code | Incomplete
-|Day 5| Initial Clickable Model  | Incomplete
-|Day 6| MVP | Incomplete
-|Day 7| Present | Incomplete
-
+|Day 1| Project Description: Wireframes / Priority Matrix / Component Hierarchy| Incomplete
+|Day 2| Core Application Structure (HTML, Components, CSS, etc.). MVP: 1st API call. Render data to list component | Incomplete
+|Day 3| Begin Post MVP. More Info Page with data for single asteroid (2nd API call). About page with info about Sentry | Incomplete
+|Day 4| BG image for page. Transitions between pages. Search filters. Google Fonts | Incomplete
+|Day 5| Present | Incomplete
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+The Sentry App will query the NASA Sentry API for data about potential asteroid impacts with earth in the next 100+ years and give detailed information about each "virtual impactor," including calculated date of impact, velocity upon reaching Earth's atmosphere, impact probability, and more.
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+[Wireframe (Desktop)](https://res.cloudinary.com/brian-ogilvie/image/upload/v1547527210/Sentry/Wireframe%20%28Desktop%29.jpg)  
+[Wireframe (Mobile)](https://res.cloudinary.com/brian-ogilvie/image/upload/v1547527206/Sentry/Wireframe%20Mobile.jpg)  
+[Wireframe ImpactList Component](https://res.cloudinary.com/brian-ogilvie/image/upload/v1547527206/Sentry/Wireframe--Impact%20List%20Component.jpg)
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+1. API call for all probable impacts in next 100 years.
+2. API call for info on a single asteroid
+3. Static content about Sentry and how calculations are performed
+4. Display List in Main content
+5. Displey More Info in main content (triggered by click event on list item)
+6. Choose Fonts for page
+7. Background Image for page
+8. Nice CSS transitions for navigation and user interaction
+9. Searchable Query/Filters
+
+<img alt="priority matrix" src="https://res.cloudinary.com/brian-ogilvie/image/upload/v1547527210/Sentry/Priority%20Matrix.jpg" >  
 
 ### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### SAMPLE.....
 #### MVP 
 
-- Find and use external api 
-- Render data on page in a list
+- Fetch date from Sentry API for all impacts with probability >= 1e-3
+- Render data in a list in Main content
 
 #### PostMVP 
 
-- Add data to favorites section
+- More Info page with lots more data on any single asteroid impact. * Second API call.
+- Make list sortable by date/object/impact probability
+- Well-written About page with information about Sentry
+- Customizeable Search Query/Filters
 
 ## React Architectural Design
 
-Define the the React components and the architectural design of your app.
-
-#### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
+#### [Component Hierarchy](https://res.cloudinary.com/brian-ogilvie/image/upload/v1547528616/Sentry/Component%20Hierarchy.jpg)
 
 ## Functional Components
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-#### SAMPLE.....
 | Component | Description | 
-| --- | :---: |  
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| --- | :---: |
+|App | Class: Maintains array of impact data and passes to child components |  
+| Header | Functional: Renders page title and source information | 
+| Footer | Functional: More source information |
+| Nav | Class: dictates the active content within the main section. Implements React Router Links |
+| Main | Functional: Renders React Router Routes |
+| ImpactList | Class: Initiates 1st API call and sends response back to App. Renders data in a list |
+| ImpactItem | Functional: Displays data for one element of the list array |
+| AsteroidData | Class: Initiates 2nd API call and renders data about a given virtual impactor |
+| About | Functional: Static information about Sentry |
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
-#### SAMPLE.....
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs |
-| Total | H | 6hrs| 5hrs | 
+| Core Application Structure | H | 2hrs| |
+| 1st API call | H | 1hr |  |
+| Render Data to ImpactList component | H | 2hrs | |
+| Trigger & initiate 2nd API Call | M | 2hrs | |
+| Render Asteroid Data to AsteroidData page | M | 2hrs | |
+| Write content for About page | M | 1hr | |
+| Render content in About page | M | 1hr | |
+| Background Image conmponent for page | L | 1hr | |
+| More robust CSS design/layout | L | 2hrs | |
+| Nice CSS Transitions for navigation | L | 2hrs | |
+| Searchable Query/Filters | L | 4hrs | |
+| Total | n/a | 20hrs |  | 
 
 ## Helper Functions
-Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
+| Function | Description |
+| :---: | --- |
+| convertExpToDecimal() | Converts a number in exponential notation to a decimal. |
 
-#### SAMPLE.....
-| Function | Description | 
-| --- | :---: |  
-| Capitalize | This will capitalize the first letter in a string of text | 
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
  
- #### SAMPLE.....
 | Library | What it Does | 
 | --- | :---: |  
-| Bootstrap | Used to help style my application | 
-| Giphy API | Used to get gifs to use | 
+| [Sentry API](https://ssd-api.jpl.nasa.gov.sentry.api) | Provides all data for my project | 
 
 
 ## Code Snippet
