@@ -5,3 +5,16 @@
 .impact-list__heading {
   margin-top: 0;
 }
+
+.impact-list__items {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (min-width: 750px) {
+  .impact-list__items {
+    flex-flow: row wrap;
+  }
+}

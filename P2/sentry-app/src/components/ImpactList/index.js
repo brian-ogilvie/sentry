@@ -14,7 +14,9 @@ const ImpactList = props => {
       {props.impactors ? (
         <div>
           <h1 className="impact-list__heading">Potential Impacts</h1>
-          {renderImpactItems()}
+          <div className="impact-list__items">
+            {renderImpactItems()}
+          </div>
         </div>
       )
       : (

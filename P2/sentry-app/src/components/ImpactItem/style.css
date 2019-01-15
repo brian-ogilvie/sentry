@@ -4,6 +4,7 @@
   color: white;
   padding: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .impact-item__heading {
@@ -18,4 +19,10 @@
 
 .impact-item__info {
   margin: .5em 0;
+}
+
+@media only screen and (min-width: 750px) {
+  .impact-item {
+    width: 45%;
+  }
 }
