@@ -58,9 +58,6 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 </details>
 
 ## Functional Components
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
-
 | Component | Description | 
 | --- | :---: |
 |App | Class: Maintains array of impact data and passes to child components |  
@@ -73,9 +70,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | AsteroidData | Class: Initiates 2nd API call and renders data about a given virtual impactor |
 | About | Functional: Static information about Sentry |
 
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
-
+## Time Frames
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
 | Core Application Structure | H | 2hrs| |
