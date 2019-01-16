@@ -76,7 +76,7 @@ class AsteroidData extends React.Component {
       return (
         <div className="asteroid-data">
           <div className="close-button" onClick={this.close}></div>
-          <h2>Loading</h2>
+          <h2>Loading...</h2>
         </div>
       )
     }
