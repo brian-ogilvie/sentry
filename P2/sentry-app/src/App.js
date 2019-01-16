@@ -31,6 +31,10 @@ class App extends Component {
     this.setState({selectedObject})
   }
 
+  closeAsteroidData = () => {
+    this.setState({selectedObject: ''})
+  }
+
   componentDidMount() {
     this.getSummary()
   }
@@ -53,7 +57,7 @@ class App extends Component {
           </main>
           <Footer />
         </div>
-        {selectedObject && <AsteroidData id={selectedObject}/>}
+        {selectedObject && <AsteroidData id={selectedObject} requestClose={this.closeAsteroidData}/>}
       </div>
     );
   }

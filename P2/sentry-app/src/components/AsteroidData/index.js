@@ -23,6 +23,10 @@ class AsteroidData extends React.Component {
     return str.split('.')[0].split('-').join(' ')
   }
 
+  close = () => {
+    this.props.requestClose()
+  }
+
   renderTableData = () => {
     const data = this.state.asteroid.data
     return data.map((impact, i) => {
@@ -49,6 +53,7 @@ class AsteroidData extends React.Component {
       const prob = (Number(ip) * 100).toFixed(3)
       return (
         <div className="asteroid-data">
+          <div className="close-button" onClick={this.close}></div>
           <h2>Asteroid Data</h2>
           <h3>Object Name: {des}</h3>
           <div className="data__size-info">
@@ -68,7 +73,12 @@ class AsteroidData extends React.Component {
         </div>
       )
     } else {
-      return <div className="asteroid-data"><h2>Loading</h2></div>
+      return (
+        <div className="asteroid-data">
+          <div className="close-button" onClick={this.close}></div>
+          <h2>Loading</h2>
+        </div>
+      )
     }
   }
 }
