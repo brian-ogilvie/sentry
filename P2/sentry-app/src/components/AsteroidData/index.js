@@ -8,6 +8,7 @@ class AsteroidData extends React.Component {
     super()
     this.state = {
       asteroid: null,
+      fadingOut: false,
     }
   }
 
@@ -24,7 +25,10 @@ class AsteroidData extends React.Component {
   }
 
   close = () => {
-    this.props.requestClose()
+    if (!this.state.fadingOut) {
+      this.setState({fadingOut: true})
+      setTimeout(this.props.requestClose, 300)
+    }
   }
 
   renderTableData = () => {
@@ -51,8 +55,10 @@ class AsteroidData extends React.Component {
       const {des, ip, mass, diameter, last_obs, first_obs} = asteroid.summary
       const diam = Number(diameter).toFixed(4)
       const prob = (Number(ip) * 100).toFixed(3)
+      const fadingOut = this.state.fadingOut
+      const asteroidDataClassName = 'asteroid-data' + (fadingOut ? ' fading-out' : '')
       return (
-        <div className="asteroid-data">
+        <div className={asteroidDataClassName}>
           <div className="close-button" onClick={this.close}></div>
           <h2>Asteroid Data</h2>
           <h3>Object Name: {des}</h3>
