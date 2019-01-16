@@ -1,0 +1,27 @@
+.asteroid-data {
+  position: fixed;
+  padding: 10px;
+  z-index: 2;
+  overflow: scroll;
+  top: 2rem;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(255,100,0,.6);
+  border: 2px solid rgb(255,100,0);
+}
+
+.data__size-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.impact-table {
+  width: 100%;
+}
+
+.impact-table td {
+  text-align: center;
+  width: 50%;
+}

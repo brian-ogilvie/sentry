@@ -20,5 +20,3 @@ const util = {
 }
 
 export default util
-
-// '6.877e-03'

@@ -39,20 +39,21 @@ class App extends Component {
     const impactors = this.state.impactors
     const source = this.state.source
     const selectedObject = this.state.selectedObject
+    const containerClassName = 'container' + (selectedObject && ' container--hidden')
     return (
       <div className="App">
         <Background />
-        <Header source={source} />
-        <div className="container">
-          <Nav />
+        <Nav />
+        <div className={containerClassName}>
+          <Header source={source} />
           <main>
             <Route path="/" exact render={() => <ImpactList requestInfo={this.requestInfo} impactors={impactors}/> } />
             <Route path="/list" render={() => <ImpactList requestInfo={this.requestInfo} impactors={impactors}/> } />
             <Route path="/about" component={About} />
-            {selectedObject && <AsteroidData id={selectedObject}/>}
           </main>
           <Footer />
         </div>
+        {selectedObject && <AsteroidData id={selectedObject}/>}
       </div>
     );
   }
