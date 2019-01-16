@@ -82,13 +82,13 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 | Write content for About page | M | 1hr | .5hr |
 | Render content in About page | M | 1hr | .5hr |
 | Desktop Layout | H | 2hrs | 2.5hrs |
+| Nice CSS Transitions for navigation | L | 2hrs | 2hrs |
+| Refactor AsteroidData component | M | 1hr | .5hr |
 | Loading Component | L | 1hr | |
 | More robust CSS design/layout | L | 2hrs | |
-| Nice CSS Transitions for navigation | L | 2hrs | 2hrs |
-| Refactor AsteroidData component | M | 1hr | |
 | Preload and fade in Background Image | L | 2hrs | |
 | Searchable Query/Filters | L | 4hrs | |
-| Total | n/a | 25hrs | 13.5hrs | 
+| Total | n/a | 25hrs | 14hrs | 
 
 ## Helper Functions
 | Function | Description |

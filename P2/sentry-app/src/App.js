@@ -6,7 +6,7 @@ import Nav from './components/Nav'
 import ImpactList from './components/ImpactList'
 import Footer from './components/Footer'
 import AboutContainer from './components/AboutContainer'
-import AsteroidData from './components/AsteroidData'
+import AsteroidDataContainer from './components/AsteroidDataContainer'
 import Sentry from './util/Sentry'
 import Background from './components/Background'
 
@@ -57,7 +57,7 @@ class App extends Component {
           </main>
           <Footer />
         </div>
-        {selectedObject && <AsteroidData id={selectedObject} requestClose={this.closeAsteroidData}/>}
+        {selectedObject && <AsteroidDataContainer id={selectedObject} requestClose={this.closeAsteroidData}/>}
       </div>
     );
   }
