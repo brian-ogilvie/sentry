@@ -25,7 +25,6 @@ class Nav extends React.Component {
           <nav>
             <ul className="main-nav__list" onClick={this.toggleMenu}>
               <li className="main-nav__item"><Link className="main-nav__link" to="/list">Impact List</Link></li>
-              <li className="main-nav__item"><Link className="main-nav__link" to="/asteroid-info">Asteroid Info</Link></li>
               <li className="main-nav__item"><Link className="main-nav__link" to="/about">About Sentry</Link></li>
             </ul>
           </nav>

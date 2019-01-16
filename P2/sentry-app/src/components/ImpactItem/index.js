@@ -7,8 +7,12 @@ const ImpactItem = props => {
   const dateText = util.parseDateString(date)
   const prob = (util.convertExpToDec(ip) * 100).toFixed(3)
 
+  const handleClick = () => {
+    props.requestInfo(des)
+  }
+
   return (
-    <div className="impact-item">
+    <div className="impact-item" onClick={handleClick}>
       <p className="impact-item__heading"><span className="impact-item__em">Object Name:</span> {des}</p>
       <p className="impact-item__info"><span className="impact-item__em">Impact Date:</span> {dateText}</p>
       <p className="impact-item__info"><span className="impact-item__em">Impact Probability:</span> {prob}%</p>

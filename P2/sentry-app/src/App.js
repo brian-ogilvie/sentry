@@ -16,14 +16,19 @@ class App extends Component {
     this.state = {
       impactors: [],
       source: '',
+      selectedObject: '',
     }
   }
 
   getSummary = async () => {
-    const data = await Sentry.getSummary()
+    const data = await Sentry.getData()
     const impactors = data.data
     const source = data.signature.source
     this.setState({impactors, source})
+  }
+
+  requestInfo = selectedObject => {
+    this.setState({selectedObject})
   }
 
   componentDidMount() {
@@ -33,6 +38,7 @@ class App extends Component {
   render() {
     const impactors = this.state.impactors
     const source = this.state.source
+    const selectedObject = this.state.selectedObject
     return (
       <div className="App">
         <Background />
@@ -40,10 +46,10 @@ class App extends Component {
         <div className="container">
           <Nav />
           <main>
-            <Route path="/" exact render={() => <ImpactList impactors={impactors}/> } />
-            <Route path="/list" render={() => <ImpactList impactors={impactors}/> } />
-            <Route path="/asteroid-info" component={AsteroidData} />
+            <Route path="/" exact render={() => <ImpactList requestInfo={this.requestInfo} impactors={impactors}/> } />
+            <Route path="/list" render={() => <ImpactList requestInfo={this.requestInfo} impactors={impactors}/> } />
             <Route path="/about" component={About} />
+            {selectedObject && <AsteroidData id={selectedObject}/>}
           </main>
           <Footer />
         </div>

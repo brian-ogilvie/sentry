@@ -5,7 +5,7 @@ import ImpactItem from '../ImpactItem'
 const ImpactList = props => {
   const renderImpactItems = () => {
     return props.impactors.map((impactor,i) => {
-      return <ImpactItem key={i} impactor={impactor} />
+      return <ImpactItem key={i} impactor={impactor} requestInfo={props.requestInfo} />
     })
   }
 
