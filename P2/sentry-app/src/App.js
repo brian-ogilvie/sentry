@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Nav from './components/Nav'
 import ImpactList from './components/ImpactList'
 import Footer from './components/Footer'
-import About from './components/About'
+import AboutContainer from './components/AboutContainer'
 import AsteroidData from './components/AsteroidData'
 import Sentry from './util/Sentry'
 import Background from './components/Background'
@@ -53,7 +53,7 @@ class App extends Component {
           <main>
             <Route path="/" exact render={() => <ImpactList requestInfo={this.requestInfo} impactors={impactors}/> } />
             <Route path="/list" render={() => <ImpactList requestInfo={this.requestInfo} impactors={impactors}/> } />
-            <Route path="/about" component={About} />
+            <Route path="/about" component={AboutContainer} />
           </main>
           <Footer />
         </div>

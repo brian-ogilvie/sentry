@@ -1,0 +1,20 @@
+.About {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: rgba(0,255,0,.6);
+  border: 2px solid rgb(0,255,0);
+  animation: about-fade-in 0.5s linear;
+}
+
+.about__heading {
+  margin-top: 0;
+}
+
+@keyframes about-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

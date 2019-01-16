@@ -13,7 +13,7 @@ const ImpactList = props => {
     <div className="impact-list">
       {props.impactors ? (
         <div>
-          <h1 className="impact-list__heading">Potential Impacts</h1>
+          <h2 className="impact-list__heading">Potential Impacts</h2>
           <div className="impact-list__items">
             {renderImpactItems()}
           </div>
