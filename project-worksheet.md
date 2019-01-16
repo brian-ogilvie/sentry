@@ -79,13 +79,16 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 | Trigger & initiate 2nd API Call | M | 2hrs | 1hr |
 | Render Asteroid Data to AsteroidData page | M | 2hrs | 2hrs |
 | Background Image conmponent for page | L | 1hr | 1hr |
-| Write content for About page | M | 1hr | |
-| Render content in About page | M | 1hr | |
+| Write content for About page | M | 1hr | .5hr |
+| Render content in About page | M | 1hr | .5hr |
+| Desktop Layout | H | 2hrs | |
+| Loading Component | L | 1hr | |
 | More robust CSS design/layout | L | 2hrs | |
 | Nice CSS Transitions for navigation | L | 2hrs | |
+| Refactor AsteroidData component | M | 1hr | |
 | Preload and fade in Background Image | L | 2hrs | |
 | Searchable Query/Filters | L | 4hrs | |
-| Total | n/a | 20hrs |  | 
+| Total | n/a | 25hrs | 9hrs | 
 
 ## Helper Functions
 | Function | Description |

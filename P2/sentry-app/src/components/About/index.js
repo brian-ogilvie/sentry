@@ -2,7 +2,6 @@ import React from 'react'
 import './style.css'
 
 const About = props => {
-  console.log('this is props:', props)
   const {content_urls, displaytitle, extract_html, api_urls} = props
   const pageUrl = content_urls.desktop.page
   const sourceUrl = api_urls.summary

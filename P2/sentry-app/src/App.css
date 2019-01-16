@@ -1,12 +1,10 @@
 .App {
-  box-sizing: border-box;
   height: 100vh;
   overflow: scroll;
   position: relative;
 }
 
 .container {
-  box-sizing: border-box;
   padding-top: 1rem;
   padding-bottom: 3rem;
   min-height: 100vh;
@@ -15,6 +13,19 @@
   transition: all .5s;
 }
 
+main {
+  padding: 10px;
+}
+
 .container--hidden {
   opacity: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    padding-bottom: 2rem;
+  }
+  main {
+    margin-right: 220px;
+  }
 }

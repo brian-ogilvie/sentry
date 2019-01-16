@@ -34,6 +34,7 @@
 }
 
 .close-button {
+  box-sizing: content-box;
   width: 1rem;
   height: 1rem;
   padding: 2px;
@@ -54,6 +55,12 @@
   font-size: 1rem;
   font-family: sans-serif;
   line-height: 1em;
+}
+
+@media only screen and (min-width: 900px) {
+  .asteroid-data {
+    right: 220px;
+  }
 }
 
 @keyframes fade-in {

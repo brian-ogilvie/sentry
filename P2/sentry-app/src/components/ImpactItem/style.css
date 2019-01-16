@@ -1,10 +1,11 @@
 .impact-item {
-  box-sizing: border-box;
   background-color: rgba(150, 150, 150, .7);
   color: white;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 0 5px 10px;
   width: 100%;
+  max-width: 400px;
+
 }
 
 .impact-item__heading {
@@ -23,6 +24,13 @@
 
 @media only screen and (min-width: 750px) {
   .impact-item {
-    width: 45%;
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .impact-item {
+    width: 30%;
+    max-width: 300px;
   }
 }

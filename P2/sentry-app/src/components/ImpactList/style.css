@@ -1,7 +1,3 @@
-.impact-list {
-  padding: 10px;
-}
-
 .impact-list__heading {
   margin-top: 0;
 }
@@ -9,7 +5,7 @@
 .impact-list__items {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
