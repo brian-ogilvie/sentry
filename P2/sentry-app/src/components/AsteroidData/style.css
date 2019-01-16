@@ -11,7 +11,12 @@
   border: 2px solid rgb(255,100,0);
   opacity: 1;
   animation: fade-in 0.5s linear;
-  transition: opacity 0.5s;
+  transition: all .3s, opacity 0.5s;
+}
+
+.asteroid-data__content {
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .fading-out {
@@ -60,6 +65,17 @@
 @media only screen and (min-width: 900px) {
   .asteroid-data {
     right: 220px;
+    padding: 25px;
+  }
+  .impact-table {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .asteroid-data {
+    left: 220px;
   }
 }
 

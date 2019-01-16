@@ -59,23 +59,25 @@ class AsteroidData extends React.Component {
       const asteroidDataClassName = 'asteroid-data' + (fadingOut ? ' fading-out' : '')
       return (
         <div className={asteroidDataClassName}>
-          <div className="close-button" onClick={this.close}></div>
-          <h2>Asteroid Data</h2>
-          <h3>Object Name: {des}</h3>
-          <div className="data__size-info">
-            <div><strong>Diameter:</strong> {diam} km</div>
-            <div><strong>Mass:</strong> {mass} kg</div>
-            <div><strong>Max Impact Probability:</strong> {prob}%</div>
-            <div><strong>First Observed:</strong> {this.parseDate(first_obs)}</div>
-            <div><strong>Last Observed:</strong> {this.parseDate(last_obs)}</div>
+          <div className="asteroid-data__content">
+            <div className="close-button" onClick={this.close}></div>
+            <h2>Asteroid Data</h2>
+            <h3>Object Name: {des}</h3>
+            <div className="data__size-info">
+              <div><strong>Diameter:</strong> {diam} km</div>
+              <div><strong>Mass:</strong> {mass} kg</div>
+              <div><strong>Max Impact Probability:</strong> {prob}%</div>
+              <div><strong>First Observed:</strong> {this.parseDate(first_obs)}</div>
+              <div><strong>Last Observed:</strong> {this.parseDate(last_obs)}</div>
+            </div>
+            <h3>All Calculated Impacts:</h3>
+            <table className="impact-table">
+              <tbody>
+                <tr><th>Date</th><th>Probability</th></tr>
+                {this.renderTableData()}
+              </tbody>
+            </table>
           </div>
-          <h3>All Calculated Impacts:</h3>
-          <table className="impact-table">
-            <tbody>
-              <tr><th>Date</th><th>Probability</th></tr>
-              {this.renderTableData()}
-            </tbody>
-          </table>
         </div>
       )
     } else {

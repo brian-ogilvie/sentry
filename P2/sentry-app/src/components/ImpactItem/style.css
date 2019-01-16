@@ -1,11 +1,11 @@
 .impact-item {
-  background-color: rgba(150, 150, 150, .7);
+  background-color: rgba(120, 120, 120, .7);
   color: white;
   padding: 10px;
   margin: 0 5px 10px;
   width: 100%;
   max-width: 400px;
-
+  border: 1px solid rgb(120, 120, 120);
 }
 
 .impact-item__heading {
