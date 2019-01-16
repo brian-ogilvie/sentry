@@ -73,16 +73,17 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 ## Time Frames
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Core Application Structure | H | 2hrs| |
-| 1st API call | H | 1hr |  |
-| Render Data to ImpactList component | H | 2hrs | |
-| Trigger & initiate 2nd API Call | M | 2hrs | |
-| Render Asteroid Data to AsteroidData page | M | 2hrs | |
+| Core Application Structure | H | 2hrs| 1hr |
+| 1st API call | H | 1hr | 1hr |
+| Render Data to ImpactList component | H | 2hrs | 2hrs |
+| Trigger & initiate 2nd API Call | M | 2hrs | 1hr |
+| Render Asteroid Data to AsteroidData page | M | 2hrs | 2hrs |
+| Background Image conmponent for page | L | 1hr | 1hr |
 | Write content for About page | M | 1hr | |
 | Render content in About page | M | 1hr | |
-| Background Image conmponent for page | L | 1hr | |
 | More robust CSS design/layout | L | 2hrs | |
 | Nice CSS Transitions for navigation | L | 2hrs | |
+| Preload and fade in Background Image | L | 2hrs | |
 | Searchable Query/Filters | L | 4hrs | |
 | Total | n/a | 20hrs |  | 
 
