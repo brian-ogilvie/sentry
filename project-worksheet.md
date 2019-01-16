@@ -6,7 +6,7 @@
 |---|---| ---|
 |Day 1| Project Description: Wireframes / Priority Matrix / Component Hierarchy| Complete
 |Day 2| Core Application Structure (HTML, Components, CSS, etc.). MVP: 1st API call. Render data to list component | Complete
-|Day 3| Begin Post MVP. More Info Page with data for single asteroid (2nd API call). About page with info about Sentry | Incomplete
+|Day 3| Begin Post MVP. More Info Page with data for single asteroid (2nd API call). About page with info about Sentry | Complete
 |Day 4| BG image for page. Transitions between pages. Search filters. Google Fonts | Incomplete
 |Day 5| Present | Incomplete
 
@@ -81,14 +81,14 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
 | Background Image conmponent for page | L | 1hr | 1hr |
 | Write content for About page | M | 1hr | .5hr |
 | Render content in About page | M | 1hr | .5hr |
-| Desktop Layout | H | 2hrs | |
+| Desktop Layout | H | 2hrs | 2.5hrs |
 | Loading Component | L | 1hr | |
 | More robust CSS design/layout | L | 2hrs | |
-| Nice CSS Transitions for navigation | L | 2hrs | |
+| Nice CSS Transitions for navigation | L | 2hrs | 2hrs |
 | Refactor AsteroidData component | M | 1hr | |
 | Preload and fade in Background Image | L | 2hrs | |
 | Searchable Query/Filters | L | 4hrs | |
-| Total | n/a | 25hrs | 9hrs | 
+| Total | n/a | 25hrs | 13.5hrs | 
 
 ## Helper Functions
 | Function | Description |
