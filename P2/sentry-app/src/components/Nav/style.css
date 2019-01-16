@@ -4,8 +4,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(150,150,150,.9);
-  box-shadow: 0 0 4px black;
+  background-color: rgba(0,0,0,.9);
+  box-shadow: 0 1px 4px black;
 }
 
 .main-nav__header {
@@ -26,7 +26,7 @@
   text-align: center;
   width: 100%;
   padding: .5em;
-  background-color: gray;
+  background-color: rgba(0,0,0,.1);
   border-bottom: 1px solid black;
 }
 

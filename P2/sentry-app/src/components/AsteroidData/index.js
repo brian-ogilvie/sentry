@@ -33,7 +33,7 @@ class AsteroidData extends React.Component {
 
   renderTableData = () => {
     const data = this.state.asteroid.data
-    return data.map((impact, i) => {
+    return data.reverse().map((impact, i) => {
       const date = util.parseDateString(impact.date)
       const prob = (util.convertExpToDec(impact.ip) * 100).toFixed(4)
       return (
