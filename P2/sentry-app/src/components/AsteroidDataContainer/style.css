@@ -14,28 +14,8 @@
   transition: all .3s, opacity 0.5s;
 }
 
-.asteroid-data__content {
-  margin: 0 auto;
-  max-width: 700px;
-}
-
 .fading-out {
   opacity: 0;
-}
-
-.data__size-info {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.impact-table {
-  width: 100%;
-}
-
-.impact-table td {
-  text-align: center;
-  width: 50%;
 }
 
 .close-button {
@@ -67,16 +47,6 @@
     right: 220px;
     padding: 25px;
   }
-  .impact-table {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  .asteroid-data {
-    left: 220px;
-  }
 }
 
 @keyframes fade-in {
@@ -87,10 +57,3 @@
     opacity: 1;
   }
 }
-
-
-
-
-
-
-
