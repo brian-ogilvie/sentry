@@ -1,10 +1,19 @@
 .About {
   padding: 10px;
-  background-color: rgba(0,255,0,.6);
+  background-color: rgba(0,200,0,.8);
   border: 2px solid rgb(0,255,0);
   animation: fade-in 0.5s linear;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.About a {
+  color: white;
+  transition: all .3s;
+}
+
+.About a:hover {
+  color: rgb(228, 0, 43);
 }
 
 .about__heading {

@@ -13,7 +13,7 @@ const ImpactItem = props => {
 
   return (
     <div className="impact-item" onClick={handleClick}>
-      <p className="impact-item__heading"><span className="impact-item__em">Object Name:</span> {des}</p>
+      <h3 className="impact-item__heading"><span className="impact-item__em">Object Name:</span> {des}</h3>
       <p className="impact-item__info"><span className="impact-item__em">Impact Date:</span> {dateText}</p>
       <p className="impact-item__info"><span className="impact-item__em">Impact Probability:</span> {prob}%</p>
     </div>

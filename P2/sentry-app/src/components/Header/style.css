@@ -5,8 +5,24 @@ header {
 
 .page-title {
   margin-top: 0;
+  margin-bottom: 10px;
+  transition: all .3s;
+  line-height: .9em;
 }
 
 .header__source {
   margin:0;
+}
+
+@media only screen and (min-width: 500px) {
+  .page-title {
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .page-title {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
 }

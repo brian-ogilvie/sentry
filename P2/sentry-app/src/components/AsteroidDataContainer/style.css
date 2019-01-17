@@ -24,10 +24,16 @@
   height: 1rem;
   padding: 2px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   border: 1px solid white;
   border-radius: 50%;
+  transition: all .3s;
+}
+
+.close-button:hover {
+  transform: scale(1.1,1.1) rotate(180deg);
+  box-shadow: 0 0 4px black;
 }
 
 .close-button::after {

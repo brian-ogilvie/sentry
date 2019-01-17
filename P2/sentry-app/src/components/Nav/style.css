@@ -38,10 +38,13 @@ nav {
   padding: .5em;
   background-color: rgba(0,0,0,.1);
   border-bottom: 1px solid black;
+  transition: all .3s;
+  cursor: pointer;
 }
 
 .main-nav__link {
   color: white;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 900px) {
@@ -52,16 +55,26 @@ nav {
     background-color: rgba(100,100,100,.4);
     border: 2px solid rgb(100,100,100);
     border-radius: 8px;
-    width: 200px;
+    width: 190px;
     height: auto;
   }
 
   .main-nav__header {
     display: none;
   }
+
+  .main-nav__item {
+    border-radius: 6px 6px 0 0;
+    font-family: 'Exo 2', sans-serif;
+  }
   
   .main-nav__item--last {
     border: none;
+    border-radius: 0 0 6px 6px;
+  }
+
+  .main-nav__item:hover {
+    background-color: rgba(228, 0, 43, .7);
   }
 
   nav {
