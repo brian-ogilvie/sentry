@@ -9,6 +9,7 @@ import AboutContainer from './components/AboutContainer'
 import AsteroidDataContainer from './components/AsteroidDataContainer'
 import Sentry from './util/Sentry'
 import Background from './components/Background'
+import Loading from './components/Loading'
 
 class App extends Component {
   constructor() {
@@ -54,6 +55,7 @@ class App extends Component {
             <Route path="/" exact render={() => <ImpactList requestInfo={this.requestInfo} impactors={impactors}/> } />
             <Route path="/list" render={() => <ImpactList requestInfo={this.requestInfo} impactors={impactors}/> } />
             <Route path="/about" component={AboutContainer} />
+            <Route path="/loading" component={Loading} />
           </main>
           <Footer />
         </div>
