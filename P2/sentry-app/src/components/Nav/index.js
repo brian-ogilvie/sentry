@@ -10,9 +10,11 @@ class Nav extends React.Component {
     }
   }
 
-  toggleMenu = () => {
+  toggleMenu = (e) => {
+    const targetClass = e.target.className
     this.setState(prev => {
-      return {visible: !prev.visible}
+      const visible = targetClass === 'main-nav__header' ? !prev.visible : false
+      return {visible}
     })
   }
 
