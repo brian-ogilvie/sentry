@@ -28,8 +28,24 @@ class AsteroidDataContainer extends React.Component {
     }
   }
 
+  handleKeyUp = e => {
+    const key = e.key
+    if (key === 'Escape') {
+      this.close()
+    }
+  }
+
+  listenForEscape = () => {
+    window.addEventListener('keyup', this.handleKeyUp)
+  }
+
   componentDidMount() {
     this.getData()
+    this.listenForEscape();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('keyup', this.handleKeyUp)
   }
 
   render() {
