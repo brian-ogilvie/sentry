@@ -8,6 +8,7 @@
   border: 2px solid rgb(120, 120, 120);
   cursor: pointer;
   transition: all 0.3s;
+  animation: fade-in 0.5s linear;
 }
 
 .impact-item:hover {

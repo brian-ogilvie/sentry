@@ -18,7 +18,7 @@ const AsteroidData = props => {
   }
 
   const parseDate = str => {
-    return str.split('.')[0].split('-').join(' ')
+    return str.split('.')[0].split('-').reverse().join(' ')
   }
 
   const {des, ip, mass, diameter, last_obs, first_obs} = props.asteroid.summary
