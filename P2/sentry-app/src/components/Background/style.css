@@ -7,8 +7,6 @@
   bottom: 0;
   background-color: black;
   background-size: cover;
-}
-
-.Background--loaded {
   background-image: url(../../assets/earth_bg.jpg);
+  animation: fade-in 5s linear;
 }

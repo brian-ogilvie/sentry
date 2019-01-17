@@ -1,17 +1,10 @@
 import React from 'react'
 import './style.css'
 
-class Background extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  render() {
-    return (
-      <div className="Background Background--loaded"></div>
-    )
-  }
+const Background = () => {
+  return (
+    <div className="Background"></div>
+  )
 }
 
 export default Background
