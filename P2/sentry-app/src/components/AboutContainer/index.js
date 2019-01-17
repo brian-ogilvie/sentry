@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import About from '../About'
+import Loading from '../Loading'
 import Wikipedia from '../../util/Wikipedia'
 
 class AboutContainer extends React.Component {
@@ -24,7 +25,7 @@ class AboutContainer extends React.Component {
     const wikiInfo = this.state.wikiInfo
     return (
       <div>
-        {wikiInfo ? <About {...wikiInfo}/> : <p>Loading...</p> }
+        {wikiInfo ? <About {...wikiInfo}/> : <Loading /> }
       </div>
     )
   }

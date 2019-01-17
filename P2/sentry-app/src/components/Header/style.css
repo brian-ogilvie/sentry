@@ -1,5 +1,6 @@
 header {
   padding: 10px;
+  animation: fade-in .5s linear;
 }
 
 .page-title {

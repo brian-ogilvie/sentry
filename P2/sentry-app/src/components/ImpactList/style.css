@@ -1,3 +1,8 @@
+.impact-list {
+  animation: fade-in .5s linear;
+  position: relative;
+}
+
 .impact-list__heading {
   margin-top: 0;
 }

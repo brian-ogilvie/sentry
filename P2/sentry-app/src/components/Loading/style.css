@@ -1,0 +1,83 @@
+.Loading {
+  position: fixed;
+  top:200px;
+  right: 0;
+  left: 0;
+  height: 100px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading__loader {
+  position: relative;
+  animation: loading-fade-in 0.5s linear;
+  width:60px;
+  height:60px;
+}
+
+.loading__outer, .loading__middle, .loading__inner {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.loading__outer {
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-top: 4px solid #E4002B;
+  border-right: 4px solid #E4002B;
+  border-bottom: 4px solid rgba(0,0,0,0);
+  border-left: 4px solid rgba(0,0,0,0);
+  animation: spin 1.2s linear infinite;
+}
+
+.loading__middle {
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-top: 4px solid #0039A6;
+  border-right: 4px solid #0039A6;
+  border-bottom: 4px solid rgba(0,0,0,0);
+  border-left: 4px solid rgba(0,0,0,0);
+  animation: spin .9s linear reverse infinite;
+}
+
+.loading__inner {
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid rgba(0,0,0,0);
+  border-left: 3px solid rgba(0,0,0,0);
+  animation: spin .7s linear infinite;
+}
+
+@media only screen and (min-width: 900px) {
+  .Loading {
+    right: 220px;
+  }
+}
+
+@keyframes loading-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import ImpactItem from '../ImpactItem'
+import Loading from '../Loading'
 
 const ImpactList = props => {
   const renderImpactItems = () => {
@@ -20,7 +21,7 @@ const ImpactList = props => {
         </div>
       )
       : (
-        <p>Loading</p>
+        <Loading />
       )}
     </div>
   )

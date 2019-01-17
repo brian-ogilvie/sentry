@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 import Sentry from '../../util/Sentry'
 import AsteroidData from '../AsteroidData'
+import Loading from '../Loading'
 
 class AsteroidDataContainer extends React.Component {
   constructor() {
@@ -38,7 +39,7 @@ class AsteroidDataContainer extends React.Component {
     return (
       <div className={asteroidDataClassName}>
         <div className="close-button" onClick={this.close}></div>
-        { asteroid ? <AsteroidData asteroid={asteroid}/> : <h2>Loading...</h2> }
+        { asteroid ? <AsteroidData asteroid={asteroid}/> : <Loading /> }
       </div>
     )
   }
