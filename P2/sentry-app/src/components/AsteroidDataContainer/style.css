@@ -20,20 +20,22 @@
 
 .close-button {
   box-sizing: content-box;
+  background-color: #2e8540;
   width: 1rem;
   height: 1rem;
   padding: 2px;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
   border: 1px solid white;
   border-radius: 50%;
+  box-shadow: 0 0 4px black;
   transition: all .3s;
 }
 
 .close-button:hover {
   transform: scale(1.2,1.2) rotate(180deg);
-  box-shadow: 0 0 4px black;
+  box-shadow: 0 0 4px 2px black;
 }
 
 .close-button::after {
