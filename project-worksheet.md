@@ -101,7 +101,8 @@ The Sentry App will query the NASA Sentry API for data about potential asteroid 
  
 | Library | What it Does | 
 | --- | :---: |  
-| [Sentry API](https://ssd-api.jpl.nasa.gov.sentry.api) | Provides all data for my project | 
+| [Sentry API](https://ssd-api.jpl.nasa.gov.sentry.api) | Provides all data for my project (2 different calls) | 
+| [Wikipedia API](https://en.wikipedia.org/api/rest_v1/) | Provides content about the Sentry Program |
 
 
 ## Code Snippet
