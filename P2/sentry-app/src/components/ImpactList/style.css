@@ -5,6 +5,7 @@
 
 .impact-list__heading {
   margin-top: 0;
+  transition: all 0.3s;
 }
 
 .impact-list__items {
@@ -17,5 +18,11 @@
 @media only screen and (min-width: 750px) {
   .impact-list__items {
     flex-flow: row wrap;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .impact-list__heading {
+    padding-left: 40px
   }
 }

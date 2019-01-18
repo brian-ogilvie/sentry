@@ -21,6 +21,9 @@ header {
 }
 
 @media only screen and (min-width: 900px) {
+  header {
+    padding-left: 40px;
+  }
   .page-title {
     font-size: 3rem;
     margin-bottom: 0;
