@@ -20,7 +20,7 @@
 
 .close-button {
   box-sizing: content-box;
-  background-color: #2e8540;
+  background-color: rgb(46,133,64);
   width: 1rem;
   height: 1rem;
   padding: 2px;

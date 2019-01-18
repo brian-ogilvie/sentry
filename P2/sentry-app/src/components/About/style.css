@@ -1,7 +1,7 @@
 .About {
   padding: 10px;
-  background-color: rgba(0,200,0,.8);
-  border: 2px solid rgb(0,255,0);
+  background-color: rgba(46,133,64,.9);
+  border: 2px solid rgba(46,133,64,1);
   animation: fade-in 0.5s linear;
   max-width: 600px;
   margin: 0 auto;
