@@ -1,4 +1,4 @@
-const util = {
+const helper = {
   months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
 
   parseDateString(str) {
@@ -19,4 +19,4 @@ const util = {
   },
 }
 
-export default util
+export default helper

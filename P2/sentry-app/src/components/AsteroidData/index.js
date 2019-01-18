@@ -1,13 +1,13 @@
 import React from 'react'
 import './style.css'
-import util from '../../util'
+import helper from '../../util/helper'
 
 const AsteroidData = props => {
   const renderTableData = () => {
     const data = props.asteroid.data
     return data.reverse().map((impact, i) => {
-      const date = util.parseDateString(impact.date)
-      const prob = (util.convertExpToDec(impact.ip) * 100).toFixed(4)
+      const date = helper.parseDateString(impact.date)
+      const prob = (helper.convertExpToDec(impact.ip) * 100).toFixed(4)
       return (
         <tr key={i}>
           <td>{date}</td>

@@ -1,11 +1,11 @@
 import React from 'react'
 import './style.css'
-import util from '../../util'
+import helper from '../../util/helper'
 
 const ImpactItem = props => {
   const {des, date, ip} = props.impactor
-  const dateText = util.parseDateString(date)
-  const prob = (util.convertExpToDec(ip) * 100).toFixed(3)
+  const dateText = helper.parseDateString(date)
+  const prob = (helper.convertExpToDec(ip) * 100).toFixed(3)
 
   const handleClick = () => {
     props.requestInfo(des)
