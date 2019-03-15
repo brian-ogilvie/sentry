@@ -7,6 +7,16 @@ Also, using the Wikipedia API, the site provides a brief descpription of the Sen
 ## Deployed Project
 [http://sentry-data.surge.sh/](http://sentry-data.surge.sh/)
 
-##APIs
-[https://ssd-api.jpl.nasa.gov/sentry.api](https://ssd-api.jpl.nasa.gov/sentry.api)
-[https://en.wikipedia.org/api/rest_v1/page/summary/Sentry_(monitoring_system)](https://en.wikipedia.org/api/rest_v1/page/summary/Sentry_(monitoring_system))
+## APIs
+[NASA Sentry](https://ssd-api.jpl.nasa.gov/sentry.api)
+
+[Wikipedia](https://en.wikipedia.org/api/rest_v1/page/summary/Sentry_(monitoring_system))
+
+## Technologies Used
+- React.js
+- Axios
+- HTML5
+- CSS
+
+## Dependencies
+- Axios
