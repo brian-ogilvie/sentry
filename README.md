@@ -5,7 +5,7 @@ The Sentry App queries the NASA Sentry API for data about potential asteroid imp
 Also, using the Wikipedia API, the site provides a brief descpription of the Sentry Program as well as a link to further reading.
 
 ## Deployed Project
-[http://sentry-data.surge.sh/](http://sentry-data.surge.sh/)
+[https://sentry-data.netlify.com/](https://sentry-data.netlify.com/)
 
 ## APIs
 [NASA Sentry](https://ssd-api.jpl.nasa.gov/sentry.api)
